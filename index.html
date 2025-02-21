@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Rus Tili Webinar</title>
+  </head>
+  <body>
+    <div class="container h-screen flex flex-col lg:flex-row">
+      <div class="content w-auto lg:w-1/2">
+        <div class="webinar-info flex justify-center gap-3 lg:gap-7 mx-3 mb-11">
+          <div
+            class="time-date w-full sm:w-64 flex flex-col items-center py-2 rounded-b-3xl sm:rounded-b-[60px] shadow-md"
+          >
+            <span class="date opacity-50 text-sm sm:text-xl font-[Inter]"
+              >26-27-28 oktyabr</span
+            >
+            <span class="time text-2xl sm:text-4xl font-[Staatliches]"
+              >20:30</span
+            >
+          </div>
+          <div
+            class="price w-full sm:w-64 flex flex-col items-center py-2 rounded-b-3xl sm:rounded-b-[60px] shadow-md"
+          >
+            <span
+              class="pre-price opacity-50 text-sm sm:text-xl font-[Inter] line-through"
+              >300 000 So’m</span
+            >
+            <span
+              class="cur-price text-2xl sm:text-4xl font-[Staatliches] bg-radial from-[#379863] to-[#50CA88] bg-clip-text text-transparent"
+              >BEPUL</span
+            >
+          </div>
+        </div>
+        <div class="loginPage">
+          <div class="title relative text-center mt-16">
+            <img
+              src="./images/icon.png"
+              class="flag-img absolute left-10 -top-16 sm:left-19 -z-1"
+              alt="Flag of Russia"
+            />
+            <h2
+              class="title-text w-80 sm:w-auto mx-auto text-[40px] leading-[0.95] font-[Staatliches] text-[#042B16]"
+            >
+              Rus tilida
+              <span
+                class="bg-radial from-[#379863] to-[#50CA88] bg-clip-text text-transparent"
+                >0 dan</span
+              >
+              ravon gapirishgacha
+            </h2>
+          </div>
+          <div
+            class="what-do-u-learn flex flex-col gap-5 mx-3 sm:mx-28 mt-9 sm:mt-8 mb-14 sm:mb-12"
+          >
+            <h3
+              class="duringLesson text-lg sm:text-2xl font-[Staatliches] -mb-2"
+            >
+              Dars davomida...
+            </h3>
+            <div class="sm:w-auto w-52 flex gap-3 sm:gap-5">
+              <img
+                src="./images/communication.svg"
+                class="w-5 sm:w-auto"
+                alt=""
+              />
+              <span class="text-[#042A16] font-[Inter] text-xs sm:text-xl"
+                >Tushunib gapira olmaslik muammosiga sinalgan yechimlarni
+                beraman
+              </span>
+            </div>
+            <div class="sm:w-auto w-52 flex gap-3 sm:gap-5">
+              <img src="./images/stars.svg" class="w-5 sm:w-auto" alt="" />
+              <span class="text-[#042A16] font-[Inter] text-xs sm:text-xl"
+                >Sun’iy intellekt yordamida rus tilini oson o’rganish sirlari
+              </span>
+            </div>
+            <div class="sm:w-auto w-52 flex gap-3 sm:gap-5">
+              <img src="./images/method.svg" class="w-5 sm:w-auto" alt="" />
+              <span class="text-[#042A16] font-[Inter] text-xs sm:text-xl"
+                >Rus tili grammatikasini qiynalmasdan o’rganish uchun oson
+                usullarni bilib olasiz
+              </span>
+            </div>
+            <div class="sm:w-auto w-52 flex gap-3 sm:gap-5">
+              <img src="./images/ok.svg" class="w-5 sm:w-auto" alt="" />
+              <span class="text-[#042A16] font-[Inter] text-xs sm:text-xl z-11"
+                >Qisqa vaqtda gapirish darajasiga chiqishga yordam beruvchi
+                qadamlar ketma-ketligini tuzib beraman
+              </span>
+            </div>
+          </div>
+          <div
+            class="bonus shadow-md rounded-2xl mx-3 sm:mx-28 py-3 px-2 group flex justify-between items-center gap-2 sm:gap-4"
+          >
+            <img
+              src="./images/gift-box.svg"
+              class="group-hover:scale-110 w-12 sm:w-auto duration-300"
+              alt=""
+            />
+            <div class="gift-text flex flex-col gap-1">
+              <p class="font-[Staatliches] text-sm sm:text-xl leading-[120%]">
+                Ro’yxatdan o’tib kanalga qo’shilganlar uchun bonus:
+              </p>
+              <p
+                class="w-full font-[Inter] text-black/80 leading-none text-xs sm:text-base"
+              >
+                Rus tili darajangizni aniqlovchi testbotdan BEPUL foydalanish
+                imkoniyati
+              </p>
+            </div>
+          </div>
+          <button
+            id="openModal"
+            class="font-[Staatliches] text-xl sm:text-3xl py-3 sm:py-5 px-28 sm:px-44 mx-auto flex items-center justify-center bg-radial from-[#379863] transition-all duration-300 hover:scale-105 hover:cursor-pointer to-[#50CA88] text-white rounded-full mt-7 sm:mt-8 mb-14"
+          >
+            RO’YXATDAN O’TISH
+          </button>
+          <div
+            id="modal"
+            class="hidden fixed inset-0 z-20 items-center justify-center bg-slate-900/50 bg-opacity-50"
+          >
+            <div
+              class="w-[347px] sm:w-[508px] h-[440px] sm:h-[502px] bg-white flex flex-col gap-6 sm:gap-8 p-6 sm:p-10 rounded-2xl sm:rounded-3xl shadow-lg relative"
+            >
+              <button
+                id="closeModal"
+                class="absolute top-4 sm:top-12 right-4 sm:right-7 hover:cursor-pointer hover:scale-110"
+              >
+                <img src="./images/xmark.svg" alt="" />
+              </button>
+
+              <div class="gap-3 sm:gap-1">
+                <h2
+                  class="text-[32px] sm:text-4xl font-[Staatliches] text-left"
+                >
+                  Ro’yxatdan o’tish
+                </h2>
+                <span
+                  class="text-base sm:text-lg font-[Inter] text-left text-black/60"
+                  >Pastdagi formani to'ldirishingiz bilan yopiq kanalga
+                  qo'shilasiz!</span
+                >
+              </div>
+
+              <form class="flex flex-col gap-6 sm:gap-7">
+                <div class="flex flex-col gap-2">
+                  <label class="text-[#48635B]">Ism</label>
+                  <input
+                    type="text"
+                    id="username"
+                    required
+                    placeholder="Ismingizni kiriting"
+                    class="px-4 py-3 font-[Inter] placeholder:font-[Inter] border border-[#BED4DA] outline-none rounded-xl bg-[#F3F7F8] placeholder:text-[#BFD2CC]"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-[#48635B]">Telefon raqami</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    required
+                    value="+998"
+                    class="px-4 py-3 font-[Inter] placeholder:font-[Inter] border border-[#BED4DA] outline-none rounded-xl bg-[#F3F7F8] placeholder:text-[#BFD2CC]"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  id="loginBtn"
+                  class="font-[Staatliches] text-2xl sm:text-3xl py-3 sm:py-5 px-24 sm:px-40 flex items-center justify-center bg-radial from-[#379863] hover:cursor-pointer to-[#50CA88] text-white rounded-full hover:scale-90 duration-300"
+                >
+                  yuborish
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          id="Nigina"
+          class="absolute bottom-30 right-0 z-10 bg-white flex flex-col gap-1 py-2 rounded-2xl rotate-3 shadow-md text-center w-48 h-16"
+        >
+          <p class="font-[Staatliches] text-base text-[#042B16]">
+            Nigina Navruzova
+          </p>
+          <p class="font-[Inter] text-xs">
+            <span class="font-semibold">Professional</span>
+            <span class="text-black/80">rus tili o’qituvchisi</span>
+          </p>
+        </div>
+        <div
+          class="dashboard hidden mt-14 sm:mt-36 mb-5 sm:mb-auto mx-3 sm:mx-20"
+        >
+          <h1
+            class="text-center font-[Staatliches] text-[34px] sm:text-6xl leading-[120%] sm:leading-[117%]"
+          >
+            Bepul darsda qatnashish uchun, yopiq telegram kanalimizga obuna
+            bo'ling!
+          </h1>
+          <img
+            src="./images/pointer.svg"
+            class="mx-auto my-6 sm:my-7 h-16 sm:h-auto"
+            alt=""
+          />
+          <button
+            class="font-[Staatliches] text-2xl sm:text-3xl py-3 sm:py-5 px-14 sm:px-28 mx-auto hover:scale-110 duration-300 flex items-center justify-center bg-radial from-[#379863] hover:cursor-pointer to-[#50CA88] text-white rounded-full"
+          >
+            Kanalga qo’shilish
+          </button>
+        </div>
+      </div>
+      <div class="w-auto sm:w-1/2 flex justify-end">
+        <img
+          src="./images/background-color.svg"
+          id="background-color"
+          class="loginPage absolute sm:top-0 top-63 right-0"
+          alt="Green Radial Side Background Color"
+        />
+        <img
+          src="./images/teacher.svg"
+          id="teacherImg"
+          class="loginPage absolute sm:-bottom-31 bottom-32 sm:top-3"
+          alt="teacher"
+        />
+        <img
+          src="./images/background-color-rect.svg"
+          id="background-color-rect"
+          class="dashboard hidden absolute -bottom-30 sm:bottom-auto"
+          alt="Green Radial Side Background Color"
+        />
+        <img
+          src="./images/teacher-loggedIn.svg"
+          id="teacherImg-loggedIn"
+          class="dashboard hidden sm:absolute -bottom-31 z-3"
+          alt="teacher"
+        />
+      </div>
+    </div>
+
+    <script>
+      const openModal = document.getElementById("openModal");
+      const closeModal = document.getElementById("closeModal");
+      const modal = document.getElementById("modal");
+      const loginPage = document.querySelectorAll(".loginPage");
+      const dashboard = document.querySelectorAll(".dashboard");
+      const loginBtn = document.getElementById("loginBtn");
+
+      openModal.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      });
+
+      closeModal.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+        }
+      });
+
+      loginBtn.addEventListener("click", () => {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const tel = document.getElementById("tel").value;
+
+        if (username && tel && tel != "+998") {
+          console.log("first");
+          localStorage.setItem("user", username);
+          loginPage.forEach((page) => {
+            page.classList.add("hidden");
+          });
+          dashboard.forEach((dash) => {
+            dash.classList.remove("hidden");
+          });
+        } else {
+          alert("Ismingiz va telefon raqamingizni kiriting.");
+        }
+      });
+
+      window.onload = () => {
+        const savedUser = localStorage.getItem("user");
+        const Nigina = document.getElementById("Nigina");
+        if (savedUser) {
+          loginPage.forEach((page) => {
+            page.classList.add("hidden");
+          });
+          dashboard.forEach((dash) => {
+            dash.classList.remove("hidden");
+          });
+          Nigina.classList.add("-bottom-26", "left-19");
+          Nigina.classList.remove("bottom-30", "right-0");
+        } else {
+          loginPage.forEach((page) => {
+            page.classList.remove("hidden");
+          });
+          dashboard.forEach((dash) => {
+            dash.classList.add("hidden");
+          });
+        }
+      };
+
+      function changeImage() {
+        const backgroundImg = document.getElementById("background-color");
+        const teacherImg = document.getElementById("teacherImg");
+        const teacherImgLoggedIn = document.getElementById(
+          "teacherImg-loggedIn"
+        );
+        const backgroundColorRect = document.getElementById(
+          "background-color-rect"
+        );
+        const Nigina = document.getElementById("Nigina");
+        const width = window.innerWidth;
+
+        if (width < 640) {
+          backgroundImg.src = "./images/background-color-phone.svg";
+          teacherImg.src = "./images/teacher-phone.svg";
+          teacherImgLoggedIn.src = "./images/teacher-loggedIn-phone.svg";
+          Nigina.classList.remove("hidden");
+          backgroundColorRect.src = "./images/background-color-rect-phone.svg";
+        } else {
+          backgroundImg.src = "./images/background-color.svg";
+          teacherImg.src = "./images/teacher.svg";
+          teacherImgLoggedIn.src = "./images/teacher-loggedIn.svg";
+          Nigina.classList.add("hidden");
+          backgroundColorRect.src = "./images/background-color-rect.svg";
+        }
+      }
+
+      window.addEventListener("resize", changeImage);
+      window.addEventListener("load", changeImage);
+    </script>
+  </body>
+</html>
